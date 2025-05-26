@@ -5,7 +5,7 @@ from model import Model            # 从文件 model_组件 导入 Model 类
 # 侧边栏 布局
 with st.sidebar:  # 侧边栏 布局
     模型列表 = ["gemini-2.0-flash","deepseek-V3","kimi_moonshot"]
-    单选模型 = st.selectbox("模型选择:", 模型列表, index=1)
+    单选模型 = st.selectbox("模型选择:", 模型列表, index=0)
     f"你选择的模型为：{单选模型}"  # 显示 字符串
     st.markdown("---")
 
