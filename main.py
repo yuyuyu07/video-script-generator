@@ -21,7 +21,7 @@ with st.sidebar:  # 侧边栏 布局
             st.markdown("[API获取地址](https://platform.moonshot.cn/console/account)")
 
 # 显示 大标题
-st.title("🎬视频脚本生成器")  # 显示 大标题
+st.title("🎬短视频脚本生成器")  # 显示 大标题
 
 # 行文字 输入框
 st_视频主题 = st.text_input("💡请输入视频主题")  # 行文字 输入框  # 返回 文字

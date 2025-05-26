@@ -1,6 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate  # 导入 聊天提示模板 类
 from langchain_openai import ChatOpenAI                # 导入 聊天模型的类
-from langchain_community.utilities import WikipediaAPIWrapper  # 导入 维基百科API 类(需要科学上网)
+from langchain_community.utilities import WikipediaAPIWrapper  # 导入 维基百科API 类
 from model import Model
 def generate_script(主题, vudei_长度,选择模型):
     # ------创建 提示模板------
@@ -29,7 +29,7 @@ def generate_script(主题, vudei_长度,选择模型):
     标题_chain = 标题_template | 模型组件
     内容_chain = 内容_template | 模型组件
 
-    # ------维基百科(科学上网)------
+    # ------维基百科------
     维基搜索 = WikipediaAPIWrapper(lang="zh")  # 创建 维基百科API 对象
     维基搜索_结果 = 维基搜索.run(主题)            # 调用 .run()方法 搜索 返回摘要
 
