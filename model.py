@@ -3,9 +3,9 @@ import os
 
 class Model:
     def __init__(self, temperature,api_key):
-        self.gemini_2_flash = ChatOpenAI(
+        self.gemini = ChatOpenAI(
             temperature=temperature,
-            model="gemini-2.0-flash",
+            model="gemini-2.5-flash-preview-04-17",
             api_key= api_key,
             base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
         self.deepseek_v3 = ChatOpenAI(
